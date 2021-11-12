@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+		<script src="js/main.js"></script>
     <title>Best proger</title>
   </head>
   <body>
@@ -27,10 +28,10 @@
         <div class="container">
           <nav class="header__navigation navigation">
             <ul class="navigation__list">
-              <li class="navigation__item"><a href="#">Обо мне</a></li>
-              <li class="navigation__item"><a href="#">Прошлые проекты</a></li>
-              <li class="navigation__item"><a href="#">Умения</a></li>
-              <li class="navigation__item"><a href="#">Связаться</a></li>
+              <li class="navigation__item" id="navigation__item"><a href="index.html">Обо мне</a></li>
+              <li class="navigation__item"><a href="projects.html">Прошлые проекты</a></li>
+              <li class="navigation__item"><a href="skillls.html">Умения</a></li>
+              <li class="navigation__item"><a href="contact.html">Связаться</a></li>
             </ul>
             <!-- navigation__list -->
           </nav>
@@ -77,6 +78,29 @@
             <img class="aside-bar__img" src="img/i.png" alt="" />
           </aside>
         </div>
+        <section class="my-success">
+          <h2 class="my-success__header">Успехи за прошлые года</h2>
+          <div class="my-success_table-success table-success">
+            <div class="table-success__item">Год</div>
+            <div class="table-success__item">Достижение1</div>
+            <div class="table-success__item">Достижение2</div>
+            <div class="table-success__item">Достижение3</div>
+            <div class="table-success__item">2019</div>
+            <div class="table-success__item">Лучший строевой марш</div>
+            <div class="table-success__item">Русский меджвежонок</div>
+            <div class="table-success__item">Саммат</div>
+            <div class="table-success__item">2020</div>
+            <div class="table-success__item">
+              Получил премию миру у себя во сне
+            </div>
+            <div class="table-success__item">Перевел бабушку через дорогу</div>
+            <div class="table-success__item">Почти дожил до 20 лет</div>
+            <div class="table-success__item">2021</div>
+            <div class="table-success__item">Есть кот</div>
+            <div class="table-success__item">Know English very well</div>
+            <div class="table-success__item">Ещё немного немецкий</div>
+          </div>
+        </section>
       </div>
       <!-- container -->
     </main>
@@ -89,6 +113,7 @@
             </blockquote>
             <cite class="footer__author">Кто-то умный</cite>
           </div>
+					<div class="load-time" id="load-time"></div>
           <a href="https://vk.com/timohator1"
             ><img
               class="footer__networks"

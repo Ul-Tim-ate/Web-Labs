@@ -26,6 +26,26 @@ img {
   max-height: 100%;
 }
 
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 12;
+}
+
 .header__logo {
   width: 150px;
 }
@@ -59,6 +79,25 @@ img {
 .navigation__item {
   color: white;
   font-size: 20px;
+  border: none;
+  background: none;
+  font-weight: 500;
+  line-height: 22px;
+  cursor: pointer;
+}
+
+.navigation__item::after {
+  content: "";
+  display: block;
+  height: 3px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 0%;
+  background-color: #B9B0B0;
+}
+
+.navigation__item:hover::after {
+  width: 100%;
 }
 
 .navigation__list {
@@ -71,7 +110,15 @@ img {
           justify-content: space-between;
 }
 
+.active {
+  color: red;
+}
+
 .main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  margin-top: 150px;
   background-color: #F5FAFE;
   padding-top: 50px;
 }
@@ -132,7 +179,41 @@ img {
   line-height: 20px;
 }
 
+.table-success {
+  padding: 30px 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.table-success__item {
+  border: 1px solid black;
+  padding: 10px;
+  background-color: #ee7676;
+}
+
+.table-success__item:nth-child(n+10):nth-child(-n+12) {
+  background-color: #a77cb8;
+}
+
+.table-success__item:nth-child(4n - 3) {
+  font-weight: bold;
+  background-color: grey;
+}
+
+.table-success__item:nth-child(-n + 4) {
+  font-weight: bold;
+  background-color: grey;
+}
+
 .footer {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  margin-top: auto;
   background-color: #103968;
   padding: 10px 0 10px 0;
 }
@@ -161,6 +242,10 @@ img {
 }
 
 .footer__author {
+  color: white;
+}
+
+.load-time {
   color: white;
 }
 
@@ -220,6 +305,9 @@ img {
   .navigation__item {
     font-size: 13px;
   }
+  .main {
+    margin-top: 100px;
+  }
   .main__content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -242,6 +330,9 @@ img {
     font-size: 15px;
     margin-top: 5px;
     margin-bottom: 5px;
+  }
+  .table-success__item {
+    font-size: 13px;
   }
 }
 
@@ -289,6 +380,9 @@ img {
     font-size: 13px;
     margin-top: 5px;
     margin-bottom: 5px;
+  }
+  .table-success__item {
+    font-size: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
