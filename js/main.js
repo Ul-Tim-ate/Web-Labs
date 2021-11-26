@@ -5,12 +5,23 @@ window.addEventListener('load',function () {
 });
 })();
 
-
-// switch (document.location.pathname) {
-// 	case "/index.html":
-// 		document.querySelectorAll('.navigation__item').classList.add('.active');
-// 		break;
-
-// 	default:
-// 		break;
-// }
+console.log(document.location.pathname);
+window.addEventListener('load',function () {
+	let a = document.querySelectorAll('.navigation__item');
+	switch (document.location.pathname) {
+		case "/projects.html":
+			a[1].classList.add('active');
+			break;
+		case "/index.html":
+			a[0].classList.add('active');
+			break;
+		case "/skillls.html":
+			a[2].classList.add('active');
+			break;
+		case "/contact.html":
+			a[3].classList.add('active');
+			break;
+		default:
+			break;
+	}
+})
