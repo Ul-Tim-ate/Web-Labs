@@ -249,6 +249,10 @@ body {
   color: white;
 }
 
+.hrefform {
+  color: white;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;

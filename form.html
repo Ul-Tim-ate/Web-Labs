@@ -1,13 +1,51 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Таблица</title>
-</head>
-<body>
-	<form action=""></form>
-	<div class=""></div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/form.css" />
+    <title>Таблица</title>
+  </head>
+  <body>
+    <form class="create-form">
+      <select required class="create-form__days">
+        <option selected disabled value="0" id="choose">Выберите количество дней</option>
+        <option value="5" id="five">5</option>
+        <option value="6" id="six">6</option>
+      </select>
+      <a href="index.html">На главную</a>
+      <br />
+      <label>
+        Выберите количество уроков
+        <input
+          class="create-form__lessons"
+          type="range"
+          min="2"
+          max="10"
+          value="5"
+          step="1"
+        />
+      </label>
+      <span class="create-form__number-lessons">5</span>
+      <br />
+      <input type="button" class="create-form__button" value="Создать" />
+      <input
+        type="button"
+        class="create-form__clear"
+        value="Очистить"
+        id="clear"
+      />
+    </form>
+    <div class="table" id="table">
+
+		</div>
+    <template id="template__day">
+			<div class="day day__lesson" id="day__lesson">
+				<h2 class="day__header" id="day__header"></h2>
+			</div>
+    </template>
+  </body>
+  <script src="js/form.js"></script>
 </html>
+<!-- 236 -->

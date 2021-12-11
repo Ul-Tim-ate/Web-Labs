@@ -1,0 +1,44 @@
+.create-form{
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 50px;
+}
+.create-form__days{
+	margin-bottom: 30px;
+	padding: 13px 30px;
+}
+.create-form__lessons{
+	margin-bottom: 25px;
+}
+.create-form__first-color{
+	margin-bottom: 20px;
+}
+.create-form__second-color{
+	margin-bottom: 20px;
+}
+.day{
+	width: 200px;
+	display: flex;
+	flex-direction: column;
+	margin-right: 20px;
+}
+.day__header{
+	margin-bottom: 20px;
+	text-align: center;
+}
+.day__lesson{
+	margin-bottom: 10px;
+	border: none
+}
+.day__lesson:nth-child(odd){
+	background-color: aqua;
+}
+.day__lesson:nth-child(even){
+	background-color: rgb(77, 199, 73);
+}
+
+.table{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
