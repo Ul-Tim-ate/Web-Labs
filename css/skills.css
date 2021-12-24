@@ -1,0 +1,17 @@
+.image-list{
+	width: 85%;
+	margin: 0 auto;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+.image-list__item{
+	width: 300px;
+	margin-bottom: 30px;
+}
+#more{
+	margin: 0 auto;
+	display: block;
+}
